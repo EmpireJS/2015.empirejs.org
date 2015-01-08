@@ -112,6 +112,7 @@ a:hover.button {
   color: #333;
   position: relative;
   font-size: 18px;
+  max-width: 991px;
   margin: 30px auto 0 auto;
   width: 90%;
 }
@@ -325,8 +326,10 @@ a:hover.button {
 }
 
 #synopsis {
+  float: left;
   padding: 20px 0 0 0;
   text-transform: none;
+  width: 60%;
 }
 
 #synopsis h1 a {
@@ -377,6 +380,12 @@ a:hover.button {
   padding-bottom: 12px;
   line-height: 120%;
   text-transform: none;
+}
+
+#marquee {
+  margin: 65px 0 0 0;
+  float:right;
+  width:30%
 }
 
 /* 2.2 CFP / Proposals */
