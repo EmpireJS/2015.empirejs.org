@@ -1,0 +1,28 @@
+{
+  "name": "empirejs-2015",
+  "description": "Homepage for 2015.empirejs.org",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/indexzero/2015.empirejs.org.git"
+  },
+  "domains": [
+    "empirejs.com",
+    "empirejs.org",
+    "www.empirejs.com",
+    "www.empirejs.org",
+    "2015.empirejs.com",
+    "2015.empirejs.org"
+  ],
+  "dependencies": {
+    "ecstatic": "0.4.13",
+    "union": "0.3.8"
+  },
+  "scripts": {
+    "start": "./server.js"
+  },
+  "subdomain": "empirejs-2015",
+  "engines": {
+    "node": "v0.8.x"
+  }
+}
