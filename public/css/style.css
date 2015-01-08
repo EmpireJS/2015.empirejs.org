@@ -30,13 +30,9 @@ section {
   font-weight: bold;
 }
 
-.dark-highlight {
-  color: #056839;
-}
-
-.light-highlight {
-  color: #78ba51;
-}
+.dark-highlight   { color: #056839; }
+.light-highlight  { color: #78ba51; }
+.subtle-highlight { color: #999;    }
 
 .twitter {
   opacity: 0.8;
@@ -359,6 +355,10 @@ a:hover.button {
   padding-bottom: 12px;
   line-height: 120%;
   text-transform: none;
+}
+
+#synopsis h3:last-child {
+  color: #AAA;
 }
 
 #synopsis h3 a {
