@@ -16,11 +16,25 @@
 </head>
 <body>
   <div id="container">
+    <nav id="page-nav" class="alt">
+      <div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/proposals">Proposals</a></li>
+          <!--<li><a href="/#/synopsis" title="Information">Information</a></li>-->
+          <!-- <li><a href="#" title="New York">New York, NY</a></li> -->
+          <li><a class="glyphicon-heart" href="/#/love" title="Contacts">&lt;3</a></li>
+          <li><a id="twitter-bird" href="https://twitter.com/empirejs" title="Twitter" style="padding-top:15px" target="_blank"><img src="/img/twitter.png" height="30px"></a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div id="main" class="empire-state-background" itemscope itemtype="http://schema.org/Event">
       <div id="welcome">
-        <a href="/">
-          <img id="empire-node" width="1024px" src="/img/empire-node-cutout.png" />
-        </a>
+        <section id='hero'>
+          <img width="60%" src="/img/hero-colors.png" />
+        </section>
+
         <meta itemprop="name" content="EmpireJS">
         <meta itemprop="startDate" content="2015-04-26">
         <meta itemprop="endDate" content="2015-04-27">
@@ -29,20 +43,25 @@
       <div id="proposals">
         <section class="cfp-intro">
           <h1>
-            Our Call for <a class="light-highlight" href="#talks">Talks</a>
-            and <a class="dark-highlight" href="#workshops">Workshops</a> <br/> is now closed!
+            Our call for speakers is now open!
           </h1>
+          <p>We want speakers on the cutting edge of Javascript: in the Browser, on the Server, with robots and hardware, and in ways we don’t even know yet!</p>
+
+          <a class="cfp-link" href="https://docs.google.com/forms/d/1SkGlkkwP1TCi340qt_B8Yn36KTUuVPsGEHG1ziFlBUo/viewform?usp=send_form" target="_blank">Call for Speakers Form</a>
+          <p class="cfp-desc">Want to speak at EmpireJS in April this year? Well you're at the right place!</p>
+
+          <a class="cfp-link" href="https://docs.google.com/forms/d/1N88jRuHeu702ZO_faIThE1lCN_TSufrunijR1S0fPNE/viewform?usp=send_form" target="_blank">Inverse Call for Speakers Form</a>
+          <p class="cfp-desc">Is there someone you'd just love to hear from at EmpireJS 2015 this April? Take their hat right off and throw it into our ring!</p>
+
+          <a class="cfp-link" href="https://docs.google.com/forms/d/1bGpQgdOI7WR5ct_1vh6apedrPIkvW0XYH2u-D0zUriw/viewform?usp=send_form" target="_blank">Call for Expirements</a>
+          <p class="cfp-desc">Are you doing crazy things with JavaScript right now but not feeling like our regular talk track is up your alley? Still want to speak at EmpireJS 2015 in April? We want presenters who are coming at Javascript in ways we truly can't even fathom. Have a unique format you'd like to present it in? Let us know!</p>
 
           <p>
-            We'd love for everyone and anyone who is doing amazing things with Node.js to submit a proposal to EmpireNode 2014. The conference will take place in New York, NY on October 27th, 2014. If you're coming from out of town we should be able to cover all of your travel (unless you live in space, in which case you're awesome and good luck!).
+            The deadline to submit proposals is <strong>February 15th, 2015 11:59pm EDT</strong>.
           </p>
 
           <p>
-            The deadline to submit proposals is <strong>September 2, 2014 11:59pm EDT</strong>.
-          </p>
-
-          <p>
-            Diversity of voices is important to our community, and we are serious when we say EVERYONE AND ANYONE. If you've never given a talk before that's EVEN MORE reason to submit a proposal here now. If you have any questions about what we're looking for, or you're just needing a little encouragement for your submission, please drop us an email at speakers@empirenode.org
+            Diversity of voices is important to our community, and we are serious when we say EVERYONE AND ANYONE. If you've never given a talk before that's EVEN MORE reason to submit a proposal here now. If you have any questions about what we're looking for, or you're just needing a little encouragement for your submission, please drop us an email at speakers@empirejs.org
           </p>
 
           <p>
@@ -50,50 +69,12 @@
           </p>
         </section>
 
-        <section>
-          <h2>Our <span class="light-green">Conference Format</span></h2>
-          <p>
-            <strong>EmpireNode</strong> is a single day, single track format with a twist.
-          </p>
-
-          <h3>Talks</h3>
-          <p>
-            The morning will be action-packed 20-25 minute talks covering the range of all things Node.js. Presenters are encouraged to be as creative as possible with their proposal topics, talks, and format. Looking for suggestions of topics? How about:
-          </p>
-
-          <ul>
-            <li>Real-time and distributed systems</li>
-            <li>Modules, modularity, and npm</li>
-            <li>Did we mention streams? No? Then streams!</li>
-            <li>Databases with LevelDB and friends</li>
-            <li>Web protocols (DNS, SMTP, etc)</li>
-            <li>Real-world Node.js in Production</li>
-            <li>Robots, copters, boats and other hardware!</li>
-            <li>V8 Optimizations</li>
-            <li>Inside Node.js core</li>
-          </ul>
-
-          <p>
-            Just remember to make it shine!
-          </p>
-
-          <h3>Workshops</h3>
-          <p>
-           Where it gets interesting is the afternoon fun times centered around a number of workshops,
-           each presented by a team with lead instructor, delivering content for 90-120 minutes. We look
-           forward to workshops that are interactive and well-documented.
-          </p>
-
-          <p>
-          The workshops will wrap up with talks given by the lead instructor on what was missed while attendees were enjoying the other workshops. The focus here is to share a summary of the session and demonstrate the more advanced excitement you could have with this material. We encourage team proposals for the workshop submissions and are happy to help you find volunteers to help teach the material. We do ask that only one presenter talks at the wrap-up session for each workshop.
-          </p>
-        </section>
-
         <section id="love" class="content">
-          <h2><a href="http://jsconf.com/codeofconduct.html" target="_blank">NYC = No Yutzes Central</a></h2>
-          <p>
-            By attending EmpireNode you agree not to be <a style="text-decoration: underline" href="http://www.urbandictionary.com/define.php?term=yutz">a yutz.</a> Harassment of any kind will not be tolerated. We'd like to thank our friends at JSConf for the longer, less yiddish filled <a style="text-decoration: underline" href="http://jsconf.com/codeofconduct.html">Code of Conduct</a> we happily uphold.
-          </p>
+          We are an inclusive, kind community that is constantly growing.
+  We ask that you <a href="http://jsconf.com/codeofconduct.html">'don't be a
+  yutz'</a>, and try and make our fellow Empire friends feel welcome! Diversity
+  of voices is important to our community, and we are serious when we say
+  EVERYONE AND ANYONE should attend and participate.
         </section>
 
       </div>

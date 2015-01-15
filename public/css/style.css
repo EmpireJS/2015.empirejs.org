@@ -390,6 +390,11 @@ a:hover.button {
 
 /* 2.2 CFP / Proposals */
 
+a.cfp-link {
+  color: rgba(0, 156, 255, 1);
+  display: block;
+}
+
 #proposals #submit {
   margin: 0 0 0 20px;
 }
