@@ -25,8 +25,12 @@ var server = union.createServer({
 
       res.emit('next');
     },
-    ecstatic(__dirname + '/public'),
+    ecstatic({
+      root: __dirname + '/public',
+      defaultExt: 'html'
+    }),
     function (req, res) {
+      console.log('404 redirect: %s', req.url);
       return redirect(res);
     }
   ]
