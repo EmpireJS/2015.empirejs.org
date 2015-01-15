@@ -391,8 +391,12 @@ a:hover.button {
 /* 2.2 CFP / Proposals */
 
 a.cfp-link {
+  border-bottom: 2px solid #CCC;
   color: rgba(0, 156, 255, 1);
   display: block;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 #proposals #submit {
