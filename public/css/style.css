@@ -502,6 +502,19 @@ a:hover.button {
 	outline: none;
 }
 
+.tito-widget {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.tito-widget:after {
+  content: '';
+  height: 1px;
+  clear: both;
+  width: 100%;
+}
+
 /* !3.2 Speakers / Organizers */
 
 .speakers,
