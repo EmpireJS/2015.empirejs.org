@@ -67,7 +67,7 @@ a:hover.button {
 }
 
 #twitter-bird {
-  margin-top: -10px;
+  margin-top: 8px;
 }
 
 .empire-state {
@@ -454,24 +454,34 @@ a.cfp-link {
   background-color: #F4EA1A;
   border-left: 15px solid #FFF;
   border-right: 15px solid #FFF;
-  border-bottom: 15px solid #FFF;
+  box-sizing: border-box;
   color: #333;
-  height: 70px;
+  height: 50px;
   width: 100%;
-  padding: 0 0 15px 0;
   position: fixed;
   top: 0;
   left: 0;
-	overflow: hidden;
 	z-index: 1000;
 }
+
+#page-nav:after {
+  background-color: #fff;
+  content: '';
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 1001;
+}
+
 #page-nav ul {
-	padding: 5px;
-	height: 40px;
 	text-align: center;
 }
 
 #page-nav li {
+  box-sizing: border-box;
+  height: 50px;
 	margin: 0;
 	display: inline-block;
 	vertical-align: middle;
@@ -482,10 +492,11 @@ a.cfp-link {
 }
 
 #page-nav li a {
-	display: block;
+	box-sizing: border-box;
+  display: block;
 	padding: 5px 17px;
-	line-height: 35px;
-	height:30px;
+	line-height: 40px;
+	height: 50px;
 	font-size: 22px;
 	text-decoration: none;
 	letter-spacing: -1px;
