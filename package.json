@@ -22,7 +22,7 @@
   },
   "subdomain": "empirejs-2015",
   "engines": {
-    "node": "v0.8.x"
+    "node": "v0.10.x"
   },
   "devDependencies": {
     "chalk": "^1.0.0",
