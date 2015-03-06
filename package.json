@@ -34,7 +34,7 @@
     "gulp-size": "^1.2.1",
     "gulp-util": "^3.0.4",
     "mkdirp": "^0.5.0",
-    "paradigm-gulp-clean": "*",
+    "paradigm-gulp-clean": "0.0.1",
     "paradigm-gulp-copy-assets": "*",
     "paradigm-gulp-stylus": "*",
     "paradigm-gulp-watch": "*",
