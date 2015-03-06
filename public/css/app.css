@@ -3137,6 +3137,9 @@ section.container {
   margin-right: 20px;
   width: 172px;
 }
+#speaker-list .speaker .speaker-img {
+  width: 172px;
+}
 #speaker-list .speaker .speaker-label {
   display: block;
   text-align: center;
@@ -3144,6 +3147,7 @@ section.container {
 #speaker-list .speaker .speaker-label .speaker-title {
   color: #aaa;
   display: block;
+  min-height: 40px;
 }
 
 @-moz-keyframes pulsate {
