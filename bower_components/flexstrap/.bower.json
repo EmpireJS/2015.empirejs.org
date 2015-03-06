@@ -1,0 +1,36 @@
+{
+  "name": "flexstrap",
+  "main": "index.js",
+  "authors": [
+    "Chris Abrams <mail@chrisabrams.com>"
+  ],
+  "description": "Responsive, mobile-first web products using flexible components.",
+  "keywords": [
+    "flexstrap",
+    "flexbox",
+    "stylus"
+  ],
+  "license": "MIT",
+  "homepage": "http://flexstrap.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "jquery": "~2.1.3"
+  },
+  "_release": "be6e475e45",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "be6e475e454b7a2304858775d834df1a8fe40ac8"
+  },
+  "_source": "git://github.com/flexstrap/flexstrap.git",
+  "_target": "*",
+  "_originalSource": "flexstrap",
+  "_direct": true
+}
