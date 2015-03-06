@@ -1,0 +1,84 @@
+.component-navigation
+  background-color navigation-bg-color
+  flex-wrap nowrap
+  height navigation-height
+  z-index 10
+
+  .navigation-brand
+    background-color navigation-bg-color
+    display flex
+    flex-direction column
+    height 100%
+    justify-content center
+    z-index 11
+
+    a
+      color navigation-fg-color
+
+    .navigation-logo
+      display flex
+      flex 1
+      flex-direction column
+      justify-content center
+
+  .navigation-toggle
+    cursor pointer
+    height 100%
+    padding 0 (grid-gutter-width / 2) // flush against right gutter
+    position absolute
+    right 0
+    top 0
+    z-index 12
+
+    &:hover
+      background-color darken(navigation-bg-color, 5%)
+
+    .icon-menu
+      color navigation-fg-color
+      line-height 44px
+
+  .navigation-menu
+    display block
+    left -15px
+    padding 0
+    position absolute
+    top navigation-height
+    width 100%
+    z-index 10
+
+    .navigation-links
+      background-color navigation-bg-color
+      list-style none
+      margin 0
+      padding 0
+      position relative
+      transform translate3d(0, -100%, 0)
+      transition transform 0.25s linear
+
+      .navigation-dropdown-menu
+        list-style none
+
+        .navigation-dropdown-links
+          padding-left 0
+
+          > li
+            padding-left (grid-gutter-width / 2)
+
+      li
+        box-sizing border-box
+        display block
+        position relative
+
+      li:not(.navigation-dropdown):hover, li.navigation-dropdown a:hover
+          background-color darken(navigation-bg-color, 5%)
+
+        a
+          box-sizing border-box
+          color navigation-fg-color
+          display block
+          padding 10px (grid-gutter-width / 2)
+
+.component-navigation.navigation-open
+
+  .navigation-links
+    transform translate3d(0, 0, 0)

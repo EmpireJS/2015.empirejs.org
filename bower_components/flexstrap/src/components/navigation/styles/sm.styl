@@ -1,0 +1,66 @@
+@media mq-sm-min
+
+  .component-navigation
+    left 0
+    position fixed
+    top 0
+    width 100%
+
+    .row
+      margin 0 auto
+      width screen-sm-min-width - grid-gutter-width
+
+    .navigation-menu
+      position relative
+      top 0
+
+      .navigation-links
+        transform translate3d(0, 0, 0)
+
+        > li
+          display inline-block
+
+          a
+            height navigation-height
+            line-height navigation-height
+            padding 0 (grid-gutter-width / 2)
+
+            &:hover
+              background-color darken(navigation-bg-color, 5%)
+
+        .navigation-dropdown
+
+          .navigation-dropdown-menu
+            background-color darken(navigation-bg-color, 5%)
+            display none
+            //left assigned via Javascript as CSS cannot provide window left offset
+            position absolute
+            top navigation-height
+            width 100vw
+
+            .navigation-dropdown-title
+              display inline-block
+              margin-bottom (grid-gutter-width / 4)
+              margin-top (grid-gutter-width / 3)
+              padding-left (grid-gutter-width / 2)
+
+            .navigation-dropdown-desc
+              display inline-block
+              margin-left (grid-gutter-width / 2)
+
+            .navigation-dropdown-links
+              padding-left 0
+
+              > li
+                padding-left 0
+
+              a
+
+                &:hover
+                  background-color darken(navigation-bg-color, 10%)
+
+          &:hover
+            background-color darken(navigation-bg-color, 5%)
+
+            .navigation-dropdown-menu
+              display block

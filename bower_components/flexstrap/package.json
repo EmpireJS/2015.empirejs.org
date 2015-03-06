@@ -1,0 +1,29 @@
+{
+  "name": "flexstrap",
+  "version": "0.0.3",
+  "description": "Responsive, mobile-first web products using flexible components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flexstrap/flexstrap"
+  },
+  "keywords": [
+    "components",
+    "flexible",
+    "flexstrap",
+    "flexbox",
+    "stylus"
+  ],
+  "author": "Chris Abrams <mail@chrisabrams.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flexstrap/flexstrap/issues"
+  },
+  "homepage": "https://github.com/flexstrap/flexstrap",
+  "devDependencies": {
+    "gulp-6to5": "^2.0.0"
+  }
+}
