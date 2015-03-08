@@ -12,9 +12,9 @@ module.exports = (server) => {
 
   })*/
 
-  server.get('/scholorship', (req, res) => {
+  server.get('/scholarship', (req, res) => {
 
-    res.render('scholorship', {layout: 'layouts/main'})
+    res.render('scholarship', {layout: 'layouts/main'})
 
   })
 
