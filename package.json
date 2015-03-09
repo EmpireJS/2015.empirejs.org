@@ -15,7 +15,8 @@
     "2015.empirejs.org"
   ],
   "dependencies": {
-    "babel": "^4.7.0"
+    "babel": "^4.7.0",
+    "paradigm-server-express": "*"
   },
   "scripts": {
     "start": "./index.js"
@@ -40,7 +41,6 @@
     "paradigm-gulp-watch": "*",
     "paradigm-gulp-watch-handlebars": "*",
     "paradigm-minimist-watching": "*",
-    "paradigm-server-express": "*",
     "run-sequence": "^1.0.2"
   }
 }
