@@ -18,7 +18,7 @@
     "babel": "^4.7.0"
   },
   "scripts": {
-    "start": "./server.js"
+    "start": "./index.js"
   },
   "subdomain": "empirejs-2015",
   "engines": {
