@@ -4,7 +4,7 @@
   "version": "1.2.2",
   "repository": {
     "type": "git",
-    "url": "http://github.com/indexzero/2015.empirejs.org.git"
+    "url": "http://github.com/empirejs/2015.empirejs.org.git"
   },
   "domains": [
     "empirejs.com",
