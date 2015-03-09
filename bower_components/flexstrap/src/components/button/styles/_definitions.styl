@@ -1,0 +1,31 @@
+btn(size = 'sm', bg-clr, fg-clr = false, outline = false)
+
+  unless fg-clr
+    fg-clr = invert(bg-clr)
+
+  if outline
+    border 1px solid bg-clr
+    color bg-clr
+
+    &:hover
+      background-color bg-clr
+      color fg-clr
+
+  else
+    background-color bg-clr
+    color fg-clr
+
+    &:hover
+      background-color fg-clr
+      color bg-clr
+
+  if size is 'md'
+    font-size 16px
+    padding 10px 24px
+
+btn-wide(size = 'sm', bg-clr, fg-clr = false, outline = false)
+  btn(size, bg-clr, fg-clr, outline)
+
+  if size is 'md'
+    padding-left 48px
+    padding-right 48px

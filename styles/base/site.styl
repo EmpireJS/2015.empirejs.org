@@ -1,0 +1,110 @@
+@import 'grid/_definitions'
+@import 'mixins/gradients/_definitions'
+@import '_definitions'
+
+html, body
+  height 100%
+
+body
+  background-color #fff
+
+.hide-sm
+
+  @media mq-sm-min
+    display none
+
+h1, h2
+  text-align center
+
+ul, li
+  list-style none
+  margin 0
+  padding 0
+
+.icon-container
+  animation pulsate 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+  animation-iteration-count infinite
+  background-color empire-green
+  border-radius 64px
+  color #fff
+  display block
+  height 64px
+  line-height 60px
+  margin 20px auto 20px
+  width 64px
+
+  i
+    display block
+    font-size 32px
+    margin 0 auto
+    text-align center
+
+    &.icon-building-filled
+      margin-left 3px
+
+    &.icon-info
+      //margin-left 9px
+
+@media mq-sm-min
+
+  body
+    padding-top 50px
+
+section.container
+  margin-bottom 15px
+  margin-top 15px
+
+.divider-inner
+  background-color empire-green
+  height 2px
+  margin 10px auto 40px
+  width 25%
+
+.infoBox {
+  text-align: center;
+}
+
+.infobox-inner {
+  display: inline-block;
+  padding: 6px 14px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.infobox-inner:after, .infobox-inner:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  content: " ";
+  pointer-events: none;
+}
+
+.infobox-inner:after {
+  margin-left: -10px;
+  border-width: 10px;
+  border-color: rgba(0,0,0,0);
+}
+
+.infobox-inner:before {
+  margin-left: -10px;
+  border-width: 10px;
+  border-color: rgba(0,0,0,0);
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 767px)
+
+  .divider-inner
+    margin-bottom 0

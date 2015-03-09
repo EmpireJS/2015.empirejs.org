@@ -1,0 +1,161 @@
+@import '_definitions'
+
+.base-styles
+  box-sizing border-box
+  position relative
+
+.container
+  @extend .base-styles
+  margin 0 auto
+  padding 0 (grid-gutter-width / 2)
+
+  @media screen-mq-sm-min
+    width screen-sm-min-width - grid-gutter-width
+
+  @media screen-mq-md-min
+    width screen-md-min-width - grid-gutter-width
+
+  @media screen-mq-lg-min
+    width screen-lg-min-width - grid-gutter-width
+
+  @media screen-mq-xl-min
+    width screen-xl-min-width - grid-gutter-width
+
+.row
+  @extend .base-styles
+  display flex
+  flex-wrap wrap
+  height 100%
+  margin 0 (grid-gutter-width / -2)
+
+  &.align-content-center
+    align-content flex-center
+
+  &.align-content-end
+    align-content flex-end
+    flex-flow row wrap
+
+  &.align-content-space-around
+    align-content space-around
+
+  &.align-content-space-between
+    align-content space-between
+
+  &.align-content-start
+    align-content flex-start
+    flex-flow row wrap
+
+  &.align-items-baseline
+    align-items baseline
+
+  &.align-items-center
+    align-items center
+
+  &.align-items-end
+    align-items flex-end
+
+  &.align-items-start
+    align-items flex-start
+
+  &.align-items-stretch
+    align-items stretch
+
+generateShowHideFor(className)
+
+  .hide-{className}
+    display none
+
+  .show-{className}
+    display block
+
+generateColumnsFor(className)
+
+  for num in (1..grid-columns)
+
+    gutter-width = grid-gutter-width
+
+    if num is 1
+      .col-{className}
+        @extend .base-styles
+        flex 1
+        min-height 1px
+
+    column-width = unit((num / grid-columns) * 100, '%')
+    opp-width    = "calc(%s + %s)" % (column-width gutter-width)
+
+    // col-xs-1, col-xs-2, ..., col-xs-12
+    .col-{className}-{num}
+      @extend .base-styles
+      flex-basis "calc(%s - %s)" % (column-width gutter-width)
+      min-height 1px
+      margin-left (gutter-width / 2)
+      margin-right (gutter-width / 2)
+
+    // col-xs-offset-1, col-xs-offset-2, ..., col-xs-offset-12
+    .col-{className}-offset-{num}
+      margin-left opp-width
+
+    // col-xs-pull-1, col-xs-pull-2, ..., col-xs-pull-12
+    .col-{className}-pull-{num}
+      right opp-width
+
+    // col-xs-push-1, col-xs-push-2, ..., col-xs-push-12
+    .col-{className}-push-{num}
+      left opp-width
+
+.align-self-baseline
+  align-self baseline
+
+.align-self-center
+  align-self center
+
+.align-self-end
+  align-self flex-end
+
+.align-self-start
+  align-self flex-start
+
+// mobile
+@media screen-mq-xs-min
+
+  generateColumnsFor('xs')
+
+@media screen-mq-xs-sm
+
+  generateShowHideFor('xs')
+
+// small
+@media screen-mq-sm-min
+
+  generateColumnsFor('sm')
+
+@media screen-mq-sm-md
+
+  generateShowHideFor('sm')
+
+// medium
+@media screen-mq-md-min
+
+  generateColumnsFor('md')
+
+@media screen-mq-md-lg
+
+  generateShowHideFor('md')
+
+// large
+@media screen-mq-lg-min
+
+  generateColumnsFor('lg')
+
+@media screen-mq-lg-xl
+
+  generateShowHideFor('lg')
+
+// extra-large
+@media screen-mq-xl-min
+
+  generateColumnsFor('xl')
+  //generateShowHideFor('xl')
+
+.container-fluid
+  width 100%

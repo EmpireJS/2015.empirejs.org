@@ -4,7 +4,7 @@
   "version": "1.2.2",
   "repository": {
     "type": "git",
-    "url": "http://github.com/indexzero/2015.empirejs.org.git"
+    "url": "http://github.com/empirejs/2015.empirejs.org.git"
   },
   "domains": [
     "empirejs.com",
@@ -15,14 +15,32 @@
     "2015.empirejs.org"
   ],
   "dependencies": {
-    "ecstatic": "0.4.13",
-    "union": "0.3.8"
+    "babel": "^4.7.0"
   },
   "scripts": {
     "start": "./server.js"
   },
   "subdomain": "empirejs-2015",
   "engines": {
-    "node": "v0.8.x"
+    "node": "v0.10.x"
+  },
+  "devDependencies": {
+    "chalk": "^1.0.0",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^4.0.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-size": "^1.2.1",
+    "gulp-util": "^3.0.4",
+    "mkdirp": "^0.5.0",
+    "paradigm-gulp-clean": "0.0.1",
+    "paradigm-gulp-copy-assets": "0.0.1",
+    "paradigm-gulp-stylus": "*",
+    "paradigm-gulp-watch": "*",
+    "paradigm-gulp-watch-handlebars": "*",
+    "paradigm-minimist-watching": "*",
+    "paradigm-server-express": "*",
+    "run-sequence": "^1.0.2"
   }
 }
