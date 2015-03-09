@@ -1050,7 +1050,6 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   height: 100%;
-  margin: 0 -15px;
 }
 .row.align-content-center {
   -ms-flex-line-pack: flex-center;
@@ -2350,17 +2349,18 @@ p.lead {
 .component-navigation .navigation-menu {
   display: block;
   left: -15px;
+  margin: 0px;
   padding: 0;
   position: absolute;
   top: 50px;
-  width: 100%;
+  width: 105%;
   z-index: 10;
 }
 .component-navigation .navigation-menu .navigation-links {
   background-color: #f4ea1a;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 15px;
   position: relative;
   -webkit-transform: translate3d(0, -100%, 0);
   -moz-transform: translate3d(0, -100%, 0);
@@ -2880,7 +2880,7 @@ section.container {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .divider-inner {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -3217,6 +3217,47 @@ section.container {
   color: #aaa;
   display: block;
   min-height: 40px;
+}
+@media (min-width: 320px) and (max-width: 449px) {
+  #speaker-list .speaker {
+    margin-right: 2%;
+    width: 48%;
+  }
+  #speaker-list .speaker:nth-child(2n) {
+    margin-right: 0px;
+  }
+  #speaker-list .speaker .speaker-img {
+    width: 100%;
+  }
+}
+@media (min-width: 450px) and (max-width: 767px) {
+  #speaker-list .speaker {
+    margin-right: 1.75%;
+    width: 31.5%;
+  }
+  #speaker-list .speaker:nth-child(3n) {
+    margin-right: 0px;
+  }
+  #speaker-list .speaker .speaker-img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #speaker-list .speaker {
+    margin-right: 1.5%;
+    width: 30.5%;
+  }
+  #speaker-list .speaker:nth-child(3n) {
+    margin-right: 0px;
+  }
+  #speaker-list .speaker .speaker-img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #speaker-list .speaker {
+    width: 22.5%;
+  }
 }
 
 @-moz-keyframes pulsate {
