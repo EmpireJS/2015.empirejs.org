@@ -137,7 +137,8 @@ require('paradigm-gulp-stylus')({
     './styles/views/**/lg.styl',
     './styles/views/**/xl.styl',
     './styles/views/about.styl',
-    './styles/views/contact.styl'
+    './styles/views/contact.styl',
+    './styles/views/home/sponsors.styl'
   ]
 })
 
