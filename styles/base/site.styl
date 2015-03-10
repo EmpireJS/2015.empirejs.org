@@ -22,8 +22,12 @@ ul, li
   padding 0
 
 .icon-container
-  animation pulsate 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95)
-  animation-iteration-count infinite
+  //
+  // This causes Chrome on a normal MBP to consume 100%+ CPU
+  // (i.e. one full CPU). Removing it.
+  //
+  // animation pulsate 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95)
+  // animation-iteration-count infinite
   background-color empire-green
   border-radius 64px
   color #fff
