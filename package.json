@@ -37,7 +37,7 @@
     "mkdirp": "^0.5.0",
     "paradigm-gulp-clean": "0.0.1",
     "paradigm-gulp-copy-assets": "0.0.1",
-    "paradigm-gulp-stylus": "*",
+    "paradigm-gulp-stylus": "0.0.2",
     "paradigm-gulp-watch": "*",
     "paradigm-gulp-watch-handlebars": "*",
     "paradigm-minimist-watching": "*",

@@ -18,11 +18,11 @@ module.exports = (server) => {
 
   })
 
-  server.get('/speakers', (req, res) => {
+  /*server.get('/speakers', (req, res) => {
 
     res.render('speakers', {layout: 'layouts/main'})
 
-  })
+  })*/
 
   server.get('/', (req, res) => {
 
