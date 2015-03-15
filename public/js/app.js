@@ -7,6 +7,28 @@ $(document).ready(function() {
 
 })
 
+// Navigation scroll to section
+$('.navigation-links').on('click', function(e) {
+
+  if(e.target.href) {
+
+    var split = e.target.href.split('#')
+
+    if(split.length > 1) {
+      e.preventDefault()
+
+      var selector = "[data-id='"+split[1]+"']"
+
+      $('html, body').animate({
+        scrollTop: $(selector).offset().top - 50 // subtract 50 because of sticky nav
+      }, 1000)
+
+    }
+
+  }
+
+})
+
 function InfoBox(opt_opts) {
 
   opt_opts = opt_opts || {};
