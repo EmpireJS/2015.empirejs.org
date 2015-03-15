@@ -1,3 +1,4 @@
+// This event is slow to fire because of tito widget :/
 $(document).ready(function() {
 
   new Flexstrap.NavigationComponent({
@@ -5,27 +6,27 @@ $(document).ready(function() {
     $: jQuery
   })
 
-})
+  // Navigation scroll to section
+  $('.navigation-links').on('click', function(e) {
 
-// Navigation scroll to section
-$('.navigation-links').on('click', function(e) {
+    if(e.target.href) {
 
-  if(e.target.href) {
+      var split = e.target.href.split('#')
 
-    var split = e.target.href.split('#')
+      if(split.length > 1) {
+        e.preventDefault()
 
-    if(split.length > 1) {
-      e.preventDefault()
+        var selector = "[data-id='"+split[1]+"']"
 
-      var selector = "[data-id='"+split[1]+"']"
+        $('html, body').animate({
+          scrollTop: $(selector).offset().top - 50 // subtract 50 because of sticky nav
+        }, 1000)
 
-      $('html, body').animate({
-        scrollTop: $(selector).offset().top - 50 // subtract 50 because of sticky nav
-      }, 1000)
+      }
 
     }
 
-  }
+  })
 
 })
 
