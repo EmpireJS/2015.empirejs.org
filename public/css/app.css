@@ -2731,6 +2731,7 @@ section.container {
   width: 172px;
 }
 #speaker-list .speaker .speaker-img {
+  height: 172px;
   width: 172px;
 }
 #speaker-list .speaker .speaker-label {
@@ -2809,6 +2810,12 @@ section.container {
   #section-subtle-highlight {
     margin-top: 40px;
   }
+}
+#section-organizers p {
+  display: block;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 @media (min-width: 1650px) {
   .container-fluid-img {
