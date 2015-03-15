@@ -2572,10 +2572,38 @@ section.container {
   }
 }
 #header-home {
-  background-color: #000;
-  color: #fff;
+  height: 100%;
   position: relative;
+}
+#header-home:before {
+  background-image: url("/img/bg/broadway.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+#header-home:after {
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#header-home #header-home-content {
+  color: #fff;
   text-align: center;
+  z-index: 2;
 }
 #header-home h1 {
   text-shadow: 0 0 30px rgba(0,0,0,0.8);
@@ -2684,6 +2712,10 @@ section.container {
     width: 100%;
   }
 }
+#section-scholarship {
+  background-color: #dfffdf;
+  padding-bottom: 20px;
+}
 #section-speakers {
   background-color: #eee;
 }
@@ -2752,10 +2784,11 @@ section.container {
 }
 @media (min-width: 1024px) {
   #header-home #header-home-logo {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-top: 200px;
   }
   #header-home #header-home-logo img {
-    width: 60%;
+    width: 30%;
     max-height: 400px;
   }
   .section-event-map .map-location-container {
@@ -2775,12 +2808,6 @@ section.container {
   }
   #section-subtle-highlight {
     margin-top: 40px;
-  }
-}
-@media (min-width: 1280px) {
-  #header-home:before {
-    background-image: url("/img/headers/fiberlashes@lg.jpg");
-    background-position: center -160px;
   }
 }
 @media (min-width: 1650px) {
