@@ -2713,6 +2713,17 @@ body {
     display: none;
   }
 }
+#section-scholarship a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#section-scholarship a:hover {
+  color: #333;
+}
+#section-scholarship a:visited {
+  color: #000;
+}
 h1,
 h2 {
   text-align: center;
@@ -2987,6 +2998,18 @@ section.container {
   .section-event-map {
     background-color: #393836;
     padding: 0;
+  }
+  .section-event-map .venue-photo-container {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    width: 100%;
+    height: 600px;
+  }
+  .section-event-map .venue-photo-container .venue-photo {
+    background: center no-repeat url("/img/nmai-alt.jpg");
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    height: 600px;
   }
   .section-event-map .map-location-container {
     color: #fff;
@@ -3439,6 +3462,18 @@ section.container {
   #header-home #header-home-logo img {
     width: 30%;
     max-height: 400px;
+  }
+  .section-event-map .venue-photo-container {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    width: 100%;
+    height: 600px;
+  }
+  .section-event-map .venue-photo-container .venue-photo {
+    background: center no-repeat url("/img/nmai-alt.jpg");
+    -webkit-flex-basis: 80%;
+    flex-basis: 80%;
+    height: 600px;
   }
   .section-event-map .map-location-container {
     -webkit-flex-basis: 20%;
