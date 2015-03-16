@@ -66,3 +66,4 @@
 .icon-quote:before { content: '\e80d'; } /* '' */
 .icon-video:before { content: '\e80e'; } /* '' */
 .icon-camera:before { content: '\e80f'; } /* '' */
+.icon-love:before { content: '♥'; margin-top: '18px'; } /* '♥' */
