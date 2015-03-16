@@ -74,13 +74,89 @@
 
 </section>
 
-<section id="section-sponsors" class="container full-width section section-event-info bg-white">
+<section id="section-speakers" class="container container-fluid section" data-id="speakers">
+
   <div class="row">
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
       <div class="icon-container event-icon-container">
-        <i class="icon-info"></i>
+        <i class="icon-group"></i>
+      </div>
+
+      <h2>Speakers</h2>
+      <div class="divider-inner"></div>
+
+      <ul id="speaker-list">
+        {{{speaker 'Andrew Rota' 'Why Static Type Checking is Better' 'Andrew_Rota.jpeg' 'andrewrota'}}}
+        {{{speaker 'Ben Purdy' 'State of the Art - Interactive Physical Installations Powered by JavaScript' 'Ben_Purdy.jpeg' 'purdybot'}}}
+        {{{speaker 'Eric Shepherd' 'Make Friends with Marketing: Safely Implementing a Container Tag' 'Eric_Shepherd.jpeg' 'arkitrave'}}}
+        {{{speaker 'Ian Webster' 'Hacking Space with Javascript and WebGL' 'Ian_Webster.jpg' 'iwebst'}}}
+        {{{speaker 'Jenna Zeigen' 'The Linguistic Relativity of Programming Languages' 'Jenna_Zeigen.jpeg' 'zeigenvector'}}}
+        {{{speaker 'John Brown' 'State of the Art - Interactive Physical Installations Powered by JavaScript' 'John_Brown.jpeg' 'thisisjohnbrown'}}}
+        {{{speaker 'Jon Kuperman' 'Inclusive Web: Getting started with Accessibility' 'Jon_Kuperman.jpeg' 'jkup'}}}
+        {{{speaker 'Jordan Kasper' 'Generating a New Async' 'Jordan_Kasper.jpg' 'jakerella'}}}
+        {{{speaker 'Paul Taylor' 'Falcor: Reactive REST at Netflix' 'Paul_Taylor.jpeg' 'trxcllnt'}}}
+        {{{speaker 'K Adam White' 'Side Projects, Front & Center' 'K_Adam_White.jpeg' 'kadamwhite'}}}
+        {{{speaker 'Karen Peng' 'DeMo-a series of web based projects exploring HCI' 'Karen_Peng.jpeg' 'KarenPunkPunk'}}}
+        {{{speaker 'Kelly King' 'Experimentation, Tone and Emotional Design' 'Kelly_King.jpeg' 'kng'}}}
+        {{{speaker 'Kevin Greer' 'Introducing FOAM' 'Kevin_Greer.png' ''}}}
+        {{{speaker 'Mariko Kosamari' ' Needle in a Techstack' 'Mariko_Kosamari.jpeg' 'kosamari'}}}
+        {{{speaker 'Mark Wunsch' 'The Giving Tree' 'Mark_Wunsch.jpeg' 'markwunsch'}}}
+        {{{speaker 'Matthew Conlen' 'Data Visualization with Node.js and Lightning' 'Matthew_Conlen.png' 'mathisonian'}}}
+        {{{speaker 'Nick Hehr' 'The Other Side of Empathy' 'Nick_Hehr.jpg' 'hipsterbrown'}}}
+        {{{speaker 'Rob Ellis' 'SuperScript' 'Rob_Ellis.jpeg' 'rob_ellis'}}}
+        {{{speaker 'Rudy Jahchan' 'Getting Started in VR with JS' 'Rudy_Jahchan.jpeg' 'rudy'}}}
+        {{{speaker 'Sequoia McDowell' 'Building Shell Tools in JavaScript' 'Sequoia_McDowell.jpeg' '_sequoia'}}}
+        {{{speaker 'Soledad Penades' 'The Disconnected Ensemble: a Prelude' 'Soledad_Penades.jpeg' 'supersole'}}}
+        {{{speaker 'Tara Feener' 'ReactJS: Let\'s Get Expressive' 'Tara_Feener.jpg' 'tfeener'}}}
+        {{{speaker 'Tim Holman' 'Fun.js' 'Tim_Holman.jpeg' 'twholman'}}}
+        {{{speaker 'Tomomi Imura' 'Dominating the Shadow DOM' 'Tomomi_Imura.jpeg' 'girlie_mac'}}}
+        {{{speaker 'Varya Stepanova' 'Driving the Style-Guide-Driven Development' 'Varya_Stepanova.jpg' 'toivonens'}}}
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="container container-fluid section section-event-map" data-id="venue">
+  <div class="row">
+
+    <div class="map-location-container">
+      <div class="icon-container event-icon-container">
+        <i class="icon-location"></i>
+      </div>
+
+      <h2>Venue</h2>
+      <div class="divider-inner"></div>
+
+      <h2>The Natural Museum of the American Indian</h2>
+
+      <a class="map-new-tab" href="https://www.google.com/maps/place/The+National+Museum+of+the+American+Indian%E2%80%93New+York/@40.703996,-74.013732,17z/data=!3m2!4b1!5s0x89c25a13ea7afc1d:0xd1063be3fbc7ff76!4m2!3m1!1s0x89c25a13e8705e8d:0x7e39e77a139dd9ba" target="_blank">
+        <span>1 Bowling Green<br />New York, NY 10004</span>
+      </a>
+    </div>
+
+    <div class="map-container" data-maplat="40.703996" data-maplon="-74.013732" data-mapzoom="15" data-color="darkgray" data-height="550" data-img="/img/marker.png" data-info="The Natural Museum of the American Indian"></div>
+
+  </div>
+
+  <div class="row">
+    <div class="venue-photo-container">
+      <div class="venue-photo"></div>
+    </div>
+  </div>
+</section>
+
+<section id="section-sponsors" class="container container-fluid section section-event-info bg-white" data-id="sponsors">
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+      <div class="icon-container event-icon-container">
+        <i class="icon-group"></i>
       </div>
 
       <h2>Sponsors</h2>
@@ -91,6 +167,7 @@
     </div>
 
   </div>
+
   <div class="row">
 
     <div id="sponsor-list">
@@ -124,30 +201,75 @@
       </div>
     </div>
 
-
-
   </div>
 </section>
 
-<section class="container container-fluid section section-event-map">
+<section id="section-scholarship" class="container container-fluid section" data-id="scholarship">
+
   <div class="row">
 
-    <div class="map-location-container">
+    <div class="col-md-2 col-lg-2 col-xl-2"></div>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+
       <div class="icon-container event-icon-container">
-        <i class="icon-location"></i>
+        <i class="icon-info"></i>
       </div>
 
-      <h2>Venue</h2>
+      <h2>EmpireJS 2015 Scholarship</h2>
       <div class="divider-inner"></div>
 
-      <h2>The Natural Museum of the American Indian</h2>
+      <p>EmpireJS exists to educate and grow the Javascript community in New York City. We are excited to announce that we will be granting scholarships for our upcoming conference. We are constantly seeking new ways to make our community broader and more inclusive. What is building diversity to us? Encouraging community members from any underrepresented group in tech to attend and participate. This scholarship is open to anyone who will be in New York City on April 25th and April 26th. This is a community run event; we hope in the future we are able to provide travel and lodging, but cannot do so as part of this initiative.</p>
 
-      <a class="map-new-tab" href="https://www.google.com/maps/place/The+National+Museum+of+the+American+Indian%E2%80%93New+York/@40.703996,-74.013732,17z/data=!3m2!4b1!5s0x89c25a13ea7afc1d:0xd1063be3fbc7ff76!4m2!3m1!1s0x89c25a13e8705e8d:0x7e39e77a139dd9ba" target="_blank">
-        <span>1 Bowling Green<br />New York, NY 10004</span>
-      </a>
+      <p>We hope this scholarship program can enable you to join us and contribute to our community!</p>
+
+      <h3>Sponsor a scholarship</h3>
+
+      <p>We’d love to be able to provide as many scholarships as possible, and we need your help! If you’re a company interested in sponsoring a scholarship, get in touch with us! Each $1000 sponsor scholarship sends 3 recipients at-cost to EmpireJS. Please contact <a href="mailto:us@empirejs.org">us@empirejs.org</a> for further details.</p>
+
+      <h3>Diversity Enthusiast Ticket</h3>
+
+      <p>Are you an individual wanting to help shape the future of JavaScript through a more diverse crowd? We invite you to become a Diversity Enthusiast. The purchase of this ticket ($600 USD) gets you:</p>
+      <ul>
+        <li>1 EmpireJS ticket for you</li>
+        <li>1 EmpireJS ticket for someone in the community who couldn’t afford to come selected via our scholarship application</li>
+      </ul>
+
+      <h3>How to apply to receive a scholarship</h3>
+
+      <p>To apply for a scholarship, fill out <a href="https://docs.google.com/forms/d/1kvTK_5h54ikTuC6pq9p7FwoHEDZo9V84QbxyLg5ecOU/viewform?usp=send_form" target="_blank">THIS FORM</a> and tell us about yourself! Are you an organization brimming with people who should be attending our conference but can’t swing the cost? Encourage folks to apply! The application deadline is April 1st. We will notify recipients by April 5th, and the remaining applicants will remain on a waiting list in case we are able to offer more from generous giving. If you have any questions, you can also contact us at <a href="mailto:us@empirejs.org">us@empirejs.org</a>.</p>
+
     </div>
 
-    <div class="map-container" data-maplat="40.703996" data-maplon="-74.013732" data-mapzoom="15" data-color="darkgray" data-height="550" data-img="/img/marker.png" data-info="The Natural Museum of the American Indian"></div>
+  </div>
+
+</section>
+
+<section id="section-organizers" class="container section" data-id="love">
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+      <div class="icon-container event-icon-container">
+        <i class="icon-love"></i>
+      </div>
+
+      <h2>Made with ♥ in NYC, for NYC</h2>
+      <div class="divider-inner"></div>
+
+      <p>We are members of the New York City Javascript Community. We love Javascript and organize EmpireJS as volunteers with the goal of growing and educating the tech community in the greater New York area.</p>
+
+      <div class="divider-inner"></div>
+
+      <ul id="speaker-list">
+        {{{organizer 'Charlie Robbins' 'charlie_robbins.jpg' 'indexzero'}}}
+        {{{organizer 'Tracy Hinds' 'tracy_hinds.jpeg' 'hackygolucky'}}}
+        {{{organizer 'Chris Abrams' 'chris_abrams.jpg' '_chrisabrams_'}}}
+        {{{organizer 'Catherine Lopez' 'catherine_lopez.jpg' 'lopezcatherine'}}}
+        {{{organizer 'Thomas Reggi' 'thomas_reggi.jpg' 'thomasreggi'}}}
+      </ul>
+
+    </div>
 
   </div>
+
 </section>
