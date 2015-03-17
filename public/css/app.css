@@ -2659,18 +2659,6 @@ section.container {
     background-color: #393836;
     padding: 0;
   }
-  .section-event-map .venue-photo-container {
-    -webkit-flex-basis: 100%;
-    flex-basis: 100%;
-    width: 100%;
-    height: 600px;
-  }
-  .section-event-map .venue-photo-container .venue-photo {
-    background: center no-repeat url("/img/nmai-alt.jpg");
-    -webkit-flex-basis: 100%;
-    flex-basis: 100%;
-    height: 600px;
-  }
   .section-event-map .map-location-container {
     color: #fff;
     -webkit-flex-basis: 100%;
@@ -2769,13 +2757,7 @@ section.container {
   background-color: #393836;
   padding: 0;
 }
-.section-event-map .venue-photo-container {
-  -webkit-flex-basis: 100%;
-  flex-basis: 100%;
-  width: 100%;
-  height: 600px;
-}
-.section-event-map .venue-photo-container .venue-photo {
+.section-event-map .venue-photo {
   background: center no-repeat url("/img/nmai-alt.jpg");
   -webkit-flex-basis: 100%;
   flex-basis: 100%;
