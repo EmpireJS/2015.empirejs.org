@@ -1,4 +1,4 @@
-// This event is slow to fire because of tito widget :/
+// This event is slow to fire because of tito widget
 $(document).ready(function() {
 
   new Flexstrap.NavigationComponent({
@@ -26,6 +26,10 @@ $(document).ready(function() {
 
     }
 
+  })
+
+  $('#nav-link-tickets').on('click', function(e) {
+    ga('send', 'event', 'Tickets', 'Click', 'Navigation')
   })
 
 })
