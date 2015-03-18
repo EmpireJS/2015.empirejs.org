@@ -1,0 +1,90 @@
+.section-event-schedule
+
+  .event-schedule-body
+    background-color #fff
+    margin-left 0
+
+    @media mq-xs-sm
+      flex-basis 100%
+
+    @media mq-md
+      flex-basis 100%
+
+    .event-schedule-day-title
+      font-size 20px
+      margin-bottom 0
+      padding-left 40px
+      text-align left
+      text-transform uppercase
+
+    .event-schedule-list
+
+      .event-schedule-item
+        padding-bottom 20px
+        padding-left 40px
+        padding-top 20px
+        position relative
+        text-align left
+
+        &:after
+          background-color brightblue
+          content ''
+          height 100%
+          left 16px
+          position absolute
+          top 36px
+          width 6px
+
+        .event-schedule-dot
+          background-color #fff
+          border 4px solid brightblue
+          border-radius 10px
+          display block
+          height 20px
+          left 9px
+          position absolute
+          top 22px
+          width 20px
+          z-index 2
+
+          &.dot-dark
+            background-color almostblack
+
+        .event-schedule-item-title
+          color brightblue
+          margin-bottom 0
+          margin-top 2px
+          text-transform uppercase
+
+        .event-schedule-item-subtitle
+          margin-top 20px
+
+        .event-schedule-panel-desc
+          font-size 15px
+          line-height 21px
+          margin 10px 0
+
+        .event-schedule-item-time
+          font-weight 800
+
+        .event-schedule-item-time + .event-schedule-item-title
+          margin-top 6px
+
+        .event-schedule-speaker
+          display block
+          font-size 14px
+          margin 0
+          margin-top 6px
+
+        .event-schedule-speaker + .event-schedule-item-time
+          display block
+          margin-top 20px
+
+        .event-schedule-item-time + .event-schedule-item-subtitle
+          margin-top 10px
+
+        .event-schedule-speaker-talk
+          color #999
+
+    .event-schedule-list li:last-child:after
+      display none
