@@ -2713,6 +2713,31 @@ section.container {
   text-align: left;
   text-transform: uppercase;
 }
+.section-event-schedule .event-schedule-body .statenislandjs {
+  max-width: 200px;
+}
+.section-event-schedule .event-schedule-body .event-schedule-sidebar {
+  -webkit-flex-basis: 20%;
+  flex-basis: 20%;
+  display: inline-block;
+  position: relative;
+}
+.section-event-schedule .event-schedule-body .event-schedule-caption {
+  -webkit-flex-basis: 80%;
+  flex-basis: 80%;
+  max-width: 600px;
+  display: inline-block;
+}
+.section-event-schedule .event-schedule-body .event-schedule-caption a {
+  color: #000;
+  text-decoration: underline;
+}
+.section-event-schedule .event-schedule-body .event-schedule-caption a:hover {
+  color: #333;
+}
+.section-event-schedule .event-schedule-body .event-schedule-caption a:visited {
+  color: #000;
+}
 .section-event-schedule .event-schedule-body .event-schedule-subtitle {
   margin: 0;
   font-style: italic;
