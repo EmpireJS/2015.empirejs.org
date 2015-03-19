@@ -10,21 +10,27 @@
     @media mq-md
       flex-basis 100%
 
-    .event-schedule-day-title
+    .event-schedule-title
       font-size 20px
+      font-weight bold
       margin-bottom 0
-      padding-left 40px
       text-align left
+      text-transform uppercase
+
+    .event-schedule-subtitle
+      margin 0
+      font-style italic
       text-transform uppercase
 
     .event-schedule-list
 
       .event-schedule-item
         padding-bottom 20px
-        padding-left 40px
+        padding-left 50px
         padding-top 20px
         position relative
         text-align left
+
 
         &:after
           background-color brightblue
@@ -49,6 +55,11 @@
 
           &.dot-dark
             background-color almostblack
+
+        .event-schedule-header-content
+          background brightblue
+          padding 10px 0 10px 10px
+          color white
 
         .event-schedule-item-title
           color brightblue
@@ -85,6 +96,16 @@
 
         .event-schedule-speaker-talk
           color #999
+
+      .event-schedule-header
+        padding-bottom 0
+        padding-top 0
+        padding-left 40px
+        margin 10px 0 10px 0
+
+      .event-schedule-header + .event-schedule-item
+        padding-top 0
+
 
     .event-schedule-list li:last-child:after
       display none

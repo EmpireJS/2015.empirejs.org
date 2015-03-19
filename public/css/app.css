@@ -2462,6 +2462,9 @@ li {
   margin: 0;
   padding: 0;
 }
+.icon-container + h2 {
+  margin: 10px 0 20px;
+}
 .icon-container {
   background-color: #0eaa7f;
   -webkit-border-radius: 64px;
@@ -2494,7 +2497,7 @@ section.container {
 .divider-inner {
   background-color: #0eaa7f;
   height: 2px;
-  margin: 10px auto 40px;
+  margin: 0 auto 40px;
   width: 25%;
 }
 .infoBox {
@@ -2541,7 +2544,7 @@ section.container {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .divider-inner {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -2703,16 +2706,21 @@ section.container {
     flex-basis: 100%;
   }
 }
-.section-event-schedule .event-schedule-body .event-schedule-day-title {
+.section-event-schedule .event-schedule-body .event-schedule-title {
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 0;
-  padding-left: 40px;
   text-align: left;
+  text-transform: uppercase;
+}
+.section-event-schedule .event-schedule-body .event-schedule-subtitle {
+  margin: 0;
+  font-style: italic;
   text-transform: uppercase;
 }
 .section-event-schedule .event-schedule-body .event-schedule-list .event-schedule-item {
   padding-bottom: 20px;
-  padding-left: 40px;
+  padding-left: 50px;
   padding-top: 20px;
   position: relative;
   text-align: left;
@@ -2741,6 +2749,11 @@ section.container {
 }
 .section-event-schedule .event-schedule-body .event-schedule-list .event-schedule-item .event-schedule-dot.dot-dark {
   background-color: #393836;
+}
+.section-event-schedule .event-schedule-body .event-schedule-list .event-schedule-item .event-schedule-header-content {
+  background: #51b8f2;
+  padding: 10px 0 10px 10px;
+  color: #fff;
 }
 .section-event-schedule .event-schedule-body .event-schedule-list .event-schedule-item .event-schedule-item-title {
   color: #51b8f2;
@@ -2777,6 +2790,15 @@ section.container {
 }
 .section-event-schedule .event-schedule-body .event-schedule-list .event-schedule-item .event-schedule-speaker-talk {
   color: #999;
+}
+.section-event-schedule .event-schedule-body .event-schedule-list .event-schedule-header {
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 40px;
+  margin: 10px 0 10px 0;
+}
+.section-event-schedule .event-schedule-body .event-schedule-list .event-schedule-header + .event-schedule-item {
+  padding-top: 0;
 }
 .section-event-schedule .event-schedule-body .event-schedule-list li:last-child:after {
   display: none;
@@ -2947,7 +2969,7 @@ section.container {
 
 
 @media mq-lg {
-  .section-event-schedule .event-schedule-body .event-schedule-day-title {
+  .section-event-schedule .event-schedule-body .event-schedule-title {
     display: block;
     margin: 20px auto 0;
     padding-left: 0;
