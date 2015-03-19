@@ -74,7 +74,44 @@
 
 </section>
 
-<section id="section-schedule" class="container full-width section section-event-schedule bg-white">
+<section class="container container-fluid section section-event-map" data-id="venue">
+  <div class="row">
+
+    <div class="map-location-container">
+      <div class="icon-container event-icon-container">
+        <i class="icon-location"></i>
+      </div>
+
+      <h2>Venue</h2>
+      <div class="divider-inner"></div>
+
+      <h2>The Natural Museum of the American Indian</h2>
+
+      <a class="map-new-tab" href="https://www.google.com/maps/place/The+National+Museum+of+the+American+Indian%E2%80%93New+York/@40.703996,-74.013732,17z/data=!3m2!4b1!5s0x89c25a13ea7afc1d:0xd1063be3fbc7ff76!4m2!3m1!1s0x89c25a13e8705e8d:0x7e39e77a139dd9ba" target="_blank">
+        <span>1 Bowling Green<br />New York, NY 10004</span>
+      </a>
+    </div>
+
+    <div class="map-container" data-maplat="40.703996" data-maplon="-74.013732" data-mapzoom="15" data-color="darkgray" data-height="550" data-img="/img/marker.png" data-info="The Natural Museum of the American Indian"></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2 col-xl-2"></div>
+    <div class="venue-photo col-md-8 col-lg-8 col-xl-8"></div>
+  </div>
+
+  <div class="row">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <img src="/img/nmai_rotunda.jpg"/>
+    </div>
+
+    <p>Wander the beautiful museum during a break? Go for it. Looking for a little peace? Find our quiet lounge. Need a bit of broadway entertainment over lunch? Join us in the Dyker Auditorium. Want a little fresh air? Grab one of our delicious box lunches and have a picnic at the historic Battery park! Interact with our speaker experiments and enjoy our full day of one-of-a-kind presentations.<p>
+  </div>
+</section>
+
+
+<section class="container full-width section section-event-schedule bg-white" data-id="schedule">
   <div class="row">
 
     <div class="col-xs-12 col-md-12">
@@ -87,31 +124,35 @@
     </div>
 
     <div class="col-xs-12 col-md-12 event-schedule-body">
-      <h3>Get excited!</h3>
-      <p>A ticket to EmpireJS 2015 includes tasty beverages and overflowing coffee. Both days include a full 
-breakfast and lunch with options for omnivores, vegetarians, and vegans. If you have any special dietary 
-needs, please let us know, so we can accommodate you. We've got some big surprises in store for these 2 days 
-so stay tuned for announcements as we get closer to the conference!</p> 
- 
-      <h3>The night before</h3>
-      <p>On Saturday, April 25th, we'll be meeting up for an informal evening of arcade games, meeting new friends, 
-and grabbing a drink. Quarters on us at Barcade!</p>
+      <p>A ticket to EmpireJS 2015 includes tasty beverages and overflowing coffee. Both days include a full breakfast and lunch with options for omnivores, vegetarians, and vegans. If you have any special dietaryneeds, please let us know, so we can accommodate you. We've got some big surprises in store for these 2 days so stay tuned for announcements as we get closer to the conference!</p>
 
-      <h3>THE CONFERENCE</h3>
-      <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <img src="/img/nmai_rotunda.jpg"/>
-      </div>
-
-      <p>Wander the beautiful museum during a break? Go for it. Looking for a little peace? Find our quiet lounge. 
-Need a bit of broadway entertainment over lunch? Join us in the Dyker Auditorium. Want a little fresh air? 
-Grab one of our delicious box lunches and have a picnic at the historic Battery park! Interact with our speaker
-experiments and enjoy our full day of one-of-a-kind presentations.<p>
-
-      <h3 class="event-schedule-day-title">Sunday, April 26th</h3>
       <ul class="event-schedule-list">
 
-        <li class="event-schedule-item">
+        <li class="event-schedule-item event-schedule-header">
           <span class="event-schedule-dot dot-dark"></span>
+          <div class="event-schedule-header-content">
+            <span class="event-schedule-title">Saturday, April 25th</span>
+            <h4 class="event-schedule-subtitle">THE NIGHT BEFORE</h4>
+          </div>
+        </li>
+
+        <li class="event-schedule-item">
+          <span class="event-schedule-dot"></span>
+          <span class="event-schedule-item-time">8:00PM - 12:00AM</span>
+          <h4 class="event-schedule-item-title">Opening Party at Barcade</h4>
+          <p class="event-schedule-panel-desc">On Saturday, April 25th, we'll be meeting up for an informal evening of arcade games, meeting new friends, and grabbing a drink. Quarters on us at Barcade!</p>
+        </li>
+
+        <li class="event-schedule-item event-schedule-header">
+          <span class="event-schedule-dot dot-dark"></span>
+          <div class="event-schedule-header-content">
+            <span class="event-schedule-title">Sunday, April 26th</span>
+            <h4 class="event-schedule-subtitle">THE CONFERENCE (DAY 1)</h4>
+          </div>
+        </li>
+
+        <li class="event-schedule-item">
+          <span class="event-schedule-dot"></span>
           <span class="event-schedule-item-time">8:00 - 9:15 AM</span>
           <h4 class="event-schedule-item-title">Breakfast</h4>
           <p class="event-schedule-panel-desc">Registration opens</p>
@@ -131,22 +172,23 @@ experiments and enjoy our full day of one-of-a-kind presentations.<p>
           <h4 class="event-schedule-item-title">Talks!</h4>
         </li>
 
-      </ul>
-    </div>
+        <li class="event-schedule-item">
+          <span class="event-schedule-dot"></span>
+          <span class="event-schedule-title">StatenIslandJS Take-over!</span>
+          <p>6:00PM - 10:00PM</p>
+          <p>Take a boat ride with us and enjoy an evening of food, drinks, games, and whatever Staten Island may have up its sleeves!</p>
+        </li>
 
-    <div>
-      <h3>StatenIslandJS-Empire Take-over!</h3>
-        <p>6:00PM - 10:00PM</p>
-        <p>Take a boat ride with us and enjoy an evening of food, drinks, games, and whatever Staten Island may have up its sleeves!</p>
-    </div>
-
-    <div class="col-xs-12 col-md-12 event-schedule-body">
-
-      <h3 class="event-schedule-day-title">Monday, April 27th</h3>
-      <ul class="event-schedule-list">
+        <li class="event-schedule-item event-schedule-header">
+          <span class="event-schedule-dot dot-dark"></span>
+          <div class="event-schedule-header-content">
+            <span class="event-schedule-title">Monday, April 27th</span>
+            <h4 class="event-schedule-subtitle">THE CONFERENCE (DAY 2)</h4>
+          </div>
+        </li>
 
         <li class="event-schedule-item">
-          <span class="event-schedule-dot dot-dark"></span>
+          <span class="event-schedule-dot"></span>
           <span class="event-schedule-item-time">8:00 - 9:30 AM</span>
           <h4 class="event-schedule-item-title">Breakfast</h4>
           <p class="event-schedule-panel-desc">Registration continues</p>
@@ -173,13 +215,21 @@ experiments and enjoy our full day of one-of-a-kind presentations.<p>
           <h6 class="event-schedule-speaker">EmpireJS family photo <span class="event-schedule-speaker-talk"></span></h6>
         </li>
 
+        <li class="event-schedule-item">
+          <span class="event-schedule-dot"></span>
+          <span class="event-schedule-title">
+            Closing Party on historic Stone Street
+          </span>
+          <p>6:00PM - 11:00PM</p>
+          <p>Food, drinks, good music, and goodbyes to new friends while chatting about all things JavaScript</p>
+        </li>
+
+
+        <li class="event-schedule-item">
+          <span class="event-schedule-dot"></span>
+        </li>
       </ul>
-    </div>
-    
-    <div>
-      <h3>Closing Party on historic Stone Street</h3>
-      <p>6:00PM - 11:00PM</p>
-      <p>Food, drinks, good music, and goodbyes to new friends while chatting about all things JavaScript</p> 
+
     </div>
 
   </div>
@@ -230,34 +280,6 @@ experiments and enjoy our full day of one-of-a-kind presentations.<p>
 
   </div>
 
-</section>
-
-<section class="container container-fluid section section-event-map" data-id="venue">
-  <div class="row">
-
-    <div class="map-location-container">
-      <div class="icon-container event-icon-container">
-        <i class="icon-location"></i>
-      </div>
-
-      <h2>Venue</h2>
-      <div class="divider-inner"></div>
-
-      <h2>The Natural Museum of the American Indian</h2>
-
-      <a class="map-new-tab" href="https://www.google.com/maps/place/The+National+Museum+of+the+American+Indian%E2%80%93New+York/@40.703996,-74.013732,17z/data=!3m2!4b1!5s0x89c25a13ea7afc1d:0xd1063be3fbc7ff76!4m2!3m1!1s0x89c25a13e8705e8d:0x7e39e77a139dd9ba" target="_blank">
-        <span>1 Bowling Green<br />New York, NY 10004</span>
-      </a>
-    </div>
-
-    <div class="map-container" data-maplat="40.703996" data-maplon="-74.013732" data-mapzoom="15" data-color="darkgray" data-height="550" data-img="/img/marker.png" data-info="The Natural Museum of the American Indian"></div>
-
-  </div>
-
-  <div class="row">
-    <div class="col-md-2 col-lg-2 col-xl-2"></div>
-    <div class="venue-photo col-md-8 col-lg-8 col-xl-8"></div>
-  </div>
 </section>
 
 <section id="section-sponsors" class="container container-fluid section section-event-info bg-white" data-id="sponsors">
