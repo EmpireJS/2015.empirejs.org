@@ -2727,6 +2727,7 @@ section.container {
   flex-basis: 80%;
   max-width: 600px;
   display: inline-block;
+  margin: 0 0 0 40px;
 }
 .section-event-schedule .event-schedule-body .event-schedule-caption a {
   color: #000;
