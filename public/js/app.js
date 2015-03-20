@@ -6,21 +6,43 @@ $(document).ready(function() {
     $: jQuery
   })
 
+  function getHashSelector(str) {
+
+    var split = str.split('#')
+
+    var selector = "[data-id='" + split[1] + "']"
+
+    return selector
+
+  }
+
+  function scrollToSelector(selector) {
+
+    $('html, body').animate({
+      scrollTop: $(selector).offset().top - 50 // subtract 50 because of sticky nav
+    }, 1000)
+
+  }
+
+  if(window.location.hash.length > 1) {
+
+    var selector = getHashSelector(window.location.hash)
+
+    scrollToSelector(selector)
+
+  }
+
   // Navigation scroll to section
   $('.navigation-links').on('click', function(e) {
 
     if(e.target.href) {
 
-      var split = e.target.href.split('#')
+      var selector = getHashSelector(e.target.href)
 
-      if(split.length > 1) {
-        e.preventDefault()
+      // Only want hash links, not links like tito
+      if(e.target.href.indexOf('#') > -1) {
 
-        var selector = "[data-id='"+split[1]+"']"
-
-        $('html, body').animate({
-          scrollTop: $(selector).offset().top - 50 // subtract 50 because of sticky nav
-        }, 1000)
+        scrollToSelector(selector)
 
       }
 
