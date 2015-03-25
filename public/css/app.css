@@ -2663,6 +2663,18 @@ section.container {
     width: 100%;
   }
 }
+#section-emcees #emcees-container {
+  text-align: center;
+}
+#section-emcees #speaker-list {
+  display: inline-block;
+  max-width: none;
+}
+#section-emcees p {
+  display: block;
+  font-size: 18px;
+  margin: 0 auto;
+}
 .section-event-schedule .event-schedule-body {
   background-color: #fff;
   margin-left: 0;
