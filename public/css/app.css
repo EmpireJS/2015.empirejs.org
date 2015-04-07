@@ -2922,6 +2922,9 @@ section.container {
 #sponsor-list .sponsor-section.platinum a img {
   margin: 0 auto;
 }
+#sponsor-list .sponsor-section.startup img {
+  width: 130px;
+}
 
 .section-event-map {
   background-color: #393836;
