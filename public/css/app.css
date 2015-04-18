@@ -2903,6 +2903,7 @@ section.container {
 }
 #sponsor-list {
   margin: 0 auto;
+  max-width: 1400px;
   width: 100%;
 }
 #sponsor-list .sponsor-section {
@@ -2921,6 +2922,12 @@ section.container {
 }
 #sponsor-list .sponsor-section.platinum a img {
   margin: 0 auto;
+}
+#sponsor-list .sponsor-section.gold {
+  max-width: 1200px;
+}
+#sponsor-list .sponsor-section.startup {
+  max-width: 800px;
 }
 #sponsor-list .sponsor-section.startup img {
   width: 130px;
