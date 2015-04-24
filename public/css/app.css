@@ -2985,8 +2985,8 @@ section.container {
   .section-event-map .venue-photo {
     background: center no-repeat url("/img/nmai-alt.jpg");
     height: 550px;
-    -webkit-flex-basis: 40%;
-    flex-basis: 40%;
+    -webkit-flex-basis: 38%;
+    flex-basis: 38%;
   }
 }
 @media mq-lg {
