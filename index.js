@@ -6,6 +6,8 @@ require('babel/polyfill')
 var Server = require('paradigm-server-express')
 
 var server = new Server({
-  paths: { routes: require('path').join(__dirname, 'server', 'routes') },
-  port: 6060
+  paths: { routes: 'server/routes' },
+  port: 6070
 })
+
+server.start();
